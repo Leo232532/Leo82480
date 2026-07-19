@@ -1,6 +1,25 @@
 <!DOCTYPE html>
 <html>
   <body>
-    code 0
+    <h1>
+      How use Hatch
+    </h1>
+    <p>
+      1.  Create: hatch new mypackage
+      2.  Enter: cd mypackage
+      3.  Edit: src/mypackage/init.py
+      Example:
+      def hello(): print(“Hello!”)
+      def add(a, b): return a + b
+      4.  Test: hatch shell python
+            import mypackage mypackage.hello() print(mypackage.add(5, 7))
+      5.  Build: hatch build
+      6.  Install: pip install dist/.whl
+      or
+          pip install -e . --break-system-packages
+      7.  Uninstall: pip uninstall mypackage
+      Tips: - init.py is your package’s main file. - Add more .py files in
+      src/mypackage/. - Save in nano: Ctrl+O, Enter. - Exit nano: Ctrl+X
+    </p>
   </body>
 </html>
